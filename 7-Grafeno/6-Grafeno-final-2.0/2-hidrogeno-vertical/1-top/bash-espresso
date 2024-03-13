@@ -1,0 +1,10 @@
+#!/bin/bash
+for i in 4.0 3.5 3.0 2.8 2.6 2.4 2.2 2.0 1.8 1.4 1.0
+do
+distance_H1=$i
+mpirun -np 5 pw.x  -inp distance-$distance_H1.in > distance-$distance_H1.out
+done
+var=$(grep ! *out)
+cat >morse-potencial.dat << ! !
+$var
+!

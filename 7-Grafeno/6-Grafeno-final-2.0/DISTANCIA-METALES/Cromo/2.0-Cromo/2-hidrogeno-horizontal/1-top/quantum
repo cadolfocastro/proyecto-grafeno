@@ -1,0 +1,12 @@
+#!/bin/bash
+for i in 5.0 4.5 4.0 3.5 3.0 2.8 2.6 2.4 2.2 2.0 1.8
+do
+distance_Z=$i
+mpirun -np 5 pw.x  -inp distance-$distance_Z.in > distance-$distance_Z.out
+done
+
+cd /home/cristian/Escritorio/Proyecto_Grafeno/7-Grafeno/6-Grafeno-final-2.0/DISTANCIA-METALES/2.0-Cromo/2-hidrogeno-horizontal/2-bridge
+scriptPath="/home/cristian/Escritorio/Proyecto_Grafeno/7-Grafeno/6-Grafeno-final-2.0/DISTANCIA-METALES/2.0-Cromo/2-hidrogeno-horizontal/2-bridge"
+scriptName="loop.sh"
+$scriptPath/$scriptName
+

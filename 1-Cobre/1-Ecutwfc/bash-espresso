@@ -1,0 +1,12 @@
+#!/bin/bash
+start=10
+end=110
+symbol="cu"
+for i in $(seq $start 5 $end)
+do
+mpirun -np 6 pw.x  -inp $symbol-$i.in > $symbol-$i.out
+done
+var=$(grep ! *out)
+cat >ecutwfc.dat << !
+$var
+!

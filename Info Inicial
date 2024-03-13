@@ -1,0 +1,15 @@
+  Metal    | Symbol  |     Crystal Structure        | Lattice parameter |
+___________|_________|______________________________|___Experimental____|
+ Vanadio   |    V    | body centred cubic     (BCC) |      3.03 (Å)     |
+ Cobre     |    Cu   | face centred cubic     (FCC) |      3.61 (Å)     |
+ Hierro    |    Fe   | body centred cubic     (BCC) |      2.86 (Å)     |
+ Manganeso |    Mn   | body centred cubic     (BCC) |      8.91 (Å)     |
+ Niquel    |    Ni   | ​face centred cubic     (FCC) |      3.52 (Å)     |
+ Cromo     |    Cr   | body centred cubic     (BCC) |      2.91 (Å)     |
+ __________|_________|______________________________|___________________|
+ 
+Cu   63.546    Cu.pbe-dn-rrkjus_psl.1.0.0.UPF
+Fe   55.845    Fe.pbe-spn-rrkjus_psl.1.0.0.UPF
+Ni   58.6934    Ni.pbe-spn-rrkjus_psl.1.0.0.UPF
+V   50.9415    V.pbe-spnl-rrkjus_psl.1.0.0.UPF
+Mn   54.938044    Mn.pbe-spn-rrkjus_psl.0.3.1.UPF

@@ -1,0 +1,54 @@
+&CONTROL
+calculation = 'vc-relax' ,
+restart_mode = 'from_scratch' ,
+outdir = '/tmp' ,
+pseudo_dir = '/home/cristian/Escritorio/Proyecto_Grafeno/pseudopotenciales', 
+prefix = 'cu-3.64915' ,
+verbosity = 'low'
+tstress = .true.
+tprnfor = .true.
+etot_conv_thr = 1.d-5
+forc_conv_thr = 1.d-4
+/
+&SYSTEM
+  ibrav = 0,
+  nat  = 4,
+  ntyp = 2,
+  ecutwfc = 80,
+  ecutrho = 560,
+  occupations='smearing',
+  smearing='methfessel-paxton',
+  degauss=0.03,
+  nspin = 2,
+  starting_magnetization(1)=0.1,
+  starting_magnetization(2)=-0.1,
+  /
+&ELECTRONS
+      electron_maxstep = 400,
+      conv_thr = 1.0d-6
+      diagonalization  = 'david'
+/
+&IONS
+    ion_dynamics = 'bfgs',
+/
+&CELL
+    cell_dynamics = 'bfgs',
+    cell_dofree = 'all',
+    press_conv_thr = 0.5
+/
+ATOMIC_SPECIES
+Cu1   63.546    Cu.pbe-dn-rrkjus_psl.1.0.0.UPF
+Cu2   63.546    Cu.pbe-dn-rrkjus_psl.1.0.0.UPF
+Cu1   63.546    Cu.pbe-dn-rrkjus_psl.1.0.0.UPF
+Cu2   63.546    Cu.pbe-dn-rrkjus_psl.1.0.0.UPF
+ATOMIC_POSITIONS  (angstrom)
+Cu1   0.0000  0.0000  0.0000	
+Cu2   1.8245  1.8245  0.0000
+Cu1   0.0000  1.8245  1.8245
+Cu2   1.8245  0.0000  1.8245  
+CELL_PARAMETERS {angstrom}
+   3.64915  0.00  0.00	
+   0.00  3.64915  0.00	
+   0.00  0.00  3.64915
+K_POINTS automatic
+8  8  8  1  1  1

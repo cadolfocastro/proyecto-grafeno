@@ -1,0 +1,39 @@
+
+&control
+    calculation = 'scf'
+    restart_mode='from_scratch',
+    prefix='Gallium Arsenide',
+    tstress = .true.
+    tprnfor = .true.
+    pseudo_dir = '/home/maria/Escritorio/Proyecto-Tesis/6.GaAs',
+    outdir='/tmp'
+ /
+ &system
+    ibrav=  2, 
+    a = 5.6531, 
+    nat=  2, ntyp= 2,
+    ecutwfc = 70,
+    ecutrho = 770,
+    occupations='smearing',
+    smearing='mp',
+    degauss=0.020 ,
+    
+ /
+ &electrons
+    mixing_mode = 'plain'
+    mixing_beta = 0.3
+    conv_thr =  1.0d-6
+ /
+ 
+ATOMIC_SPECIES
+Ga  69.723  Ga.pbe-dnl-rrkjus_psl.1.0.0.UPF
+As  74.921  As.pbe-n-rrkjus_psl.1.0.0.UPF
+
+ATOMIC_POSITIONS {crystal}
+Ga 0.000000000 0.000000000 0.000000000
+As 0.250000000 0.250000000 0.250000000
+ 
+K_POINTS {automatic}
+12 12 12 0 0 0
+
+

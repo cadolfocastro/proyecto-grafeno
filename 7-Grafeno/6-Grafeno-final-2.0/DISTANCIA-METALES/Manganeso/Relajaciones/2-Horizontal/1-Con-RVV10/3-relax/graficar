@@ -1,0 +1,8 @@
+#!/bin/bash
+
+set ylabel "Energy (Ry)" font "Times-Roman,16"
+set title "Copper- Relax with VDW"  font "Times-Roman,14"
+
+
+plot "relax.dat" smooth cspline lc 1 notitle, "" with point pt 7 lc 1 notitle,
+

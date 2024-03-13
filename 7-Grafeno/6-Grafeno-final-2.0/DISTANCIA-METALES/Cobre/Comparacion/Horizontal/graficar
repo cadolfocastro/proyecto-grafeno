@@ -1,0 +1,8 @@
+#!/bin/bash
+name="Copper"
+set xlabel "Distance (angstrom)" font "Times-Roman,14"
+set ylabel "Energy (meV)" font "Times-Roman,16"
+set title "Copper - Sixhollow horizontal H2 distance - Comparation" font "Times-Roman,14"
+unset grid
+
+plot "sixhollow-cobre.dat" smooth cspline lc 1 title "no starting magnetization", "" with point pt 7 lc 1 notitle, "sixhollow-cobre-magne.dat" smooth cspline lc 2 title  "with starting magnetization", "" with point pt 7 lc 2 notitle

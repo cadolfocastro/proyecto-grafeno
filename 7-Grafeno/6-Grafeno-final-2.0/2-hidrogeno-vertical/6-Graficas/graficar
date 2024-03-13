@@ -1,0 +1,9 @@
+#!/bin/bash
+set size ratio 1
+set xlabel "Distancia (A)" font "Times-Roman,16"
+set ylabel "Energia meV" font "Times-Roman,16"
+set title "Vertical - Curva Potencial Morse"  font "Times-Roman,16"
+plot "top.dat" smooth cspline, "bridge.dat" smooth cspline, "bridge2.dat" smooth cspline, "sixhollow.dat" smooth cspline, "baricentro.dat" smooth cspline
+
+#Para ejecutar con gnuplot este script, en la terminal se pone: gnuplot "nombre del .sh" -
+#Por ejemplo para  este: gnuplot graficar -

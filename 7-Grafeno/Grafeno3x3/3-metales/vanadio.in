@@ -1,0 +1,62 @@
+&CONTROL
+calculation = 'relax' ,
+restart_mode = 'from_scratch' ,
+outdir = '/tmp' ,
+pseudo_dir = '/home/cristian/Escritorio/Proyecto_Grafeno/pseudopotenciales', 
+prefix = 'gr-vanadio-3x3' ,
+verbosity = 'low'
+/
+&SYSTEM
+  ibrav = 4,
+  a = 7.3959,
+  c = 10,
+  nat  = 18,
+  ntyp = 2,
+  ecutwfc = 70,
+  ecutrho=490,
+  occupations='smearing',
+  smearing='mv',
+  degauss=0.001,
+  input_dft='rvv10'
+  nspin = 2,
+  starting_magnetization(2)=0.3,
+  starting_magnetization(3)=0.8,
+  
+  /
+&ELECTRONS
+  electron_maxstep = 400,
+  conv_thr = 1.0d-9
+  mixing_mode      = 'plain'
+  mixing_beta      = 0.2D0
+  diagonalization  = 'david'
+  startingwfc      = 'atomic+random'
+  
+/
+&IONS
+    ion_dynamics = 'bfgs',
+/
+
+ATOMIC_SPECIES
+C   12.0107   C.pbe-n-rrkjus_psl.1.0.0.UPF 
+V   50.9415    V.pbe-spnl-rrkjus_psl.1.0.0.UPF
+ATOMIC_POSITIONS (angstrom)
+C  0.0000000000    0.0000000000    0.0000000000
+C  0.0000000000    1.4233400890    0.0000000000
+C -1.2326486750    2.1350101330    0.0000000000
+C -1.2326486750    3.5583502220    0.0000000000
+C -2.4652973500    4.2700202660    0.0000000000
+C -2.4652973500    5.6933603550    0.0000000000
+C  2.4652973500    0.0000000000    0.0000000000
+C  2.4652973500    1.4233400890    0.0000000000
+C  1.2326486750    2.1350101330    0.0000000000
+V 1.2326486750    3.5583502220    0.0000000000
+C  0.0000000000    4.2700202660    0.0000000000
+C  0.0000000000    5.6933603550    0.0000000000
+C  4.9305947000    0.0000000000    0.0000000000
+C  4.9305947000    1.4233400890    0.0000000000
+C  3.6979460250    2.1350101330    0.0000000000
+C  3.6979460250    3.5583502220    0.0000000000
+C  2.4652973500    4.2700202660    0.0000000000
+C  2.4652973500    5.6933603550    0.0000000000
+K_POINTS automatic
+4  4  1  0  0  0 

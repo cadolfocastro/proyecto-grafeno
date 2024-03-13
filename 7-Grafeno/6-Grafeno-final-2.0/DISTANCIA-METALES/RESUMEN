@@ -1,0 +1,24 @@
+______________________|VERTICAL|__________________________
+----------------------------------------------------------
+| Metal     | Starting | Sitio de adsorción  | Distancia |
+|-----------|----------|---------------------|-----------|
+| Cobre     |   SI     |      SIXHOLLOW      |   2.8 A   |
+| Hierro    |   SI     |          -          |     -     |
+| Niquel    |   SI     |      SIXHOLLOW      |   2.8 A   |
+| Vanadio   |   SI     |      TOP            |   2.6 A   |
+| Manganeso |   SI     |      SIXHOLLOW      |   2.8 A   |
+| Cromo     |   SI     |          -          |     -     |
+----------------------------------------------------------
+
+
+______________________|HORIZONTAL|________________________
+----------------------------------------------------------
+| Metal     | Starting | Sitio de adsorción  | Distancia |
+|-----------|----------|---------------------|-----------|
+| Cobre     |   SI     |      SIXHOLLOW      |   3.0 A   |
+| Hierro    |   SI     |          -          |     -     |
+| Niquel    |   SI     |      SIXHOLLOW      |   3.0 A   |
+| Vanadio   |   SI     |      TOP            |   2.1 A   |
+| Manganeso |   SI     |      SIXHOLLOW      |   3.0 A   |
+| Cromo     |   SI     |          -          |     -     |
+----------------------------------------------------------

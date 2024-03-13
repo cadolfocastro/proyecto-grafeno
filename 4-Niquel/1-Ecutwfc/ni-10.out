@@ -1,0 +1,194 @@
+
+     Program PWSCF v.6.4.1 starts on 23Mar2022 at 15:15: 4 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI), running on     6 processors
+
+     MPI processes distributed on     1 nodes
+     R & G space division:  proc/nbgrp/npool/nimage =       6
+     Reading input from ni-10.in
+Warning: card NI1   58.6934    NI.PBE-SPN-RRKJUS_PSL.1.0.0.UPF ignored
+Warning: card NI2   58.6934    NI.PBE-SPN-RRKJUS_PSL.1.0.0.UPF ignored
+
+     Current dimensions of program PWSCF are:
+     Max number of different atomic species (ntypx) = 10
+     Max number of k-points (npk) =  40000
+     Max angular momentum in pseudopotentials (lmaxx) =  3
+
+     Subspace diagonalization in iterative solution of the eigenvalue problem:
+     a serial algorithm will be used
+
+     Found symmetry operation: I + (  0.0000 -0.5000 -0.5000)
+     This is a supercell, fractional translations are disabled
+     Message from routine setup:
+     DEPRECATED: symmetry with ibrav=0, use correct ibrav instead
+
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min          22      22      8                  204      204      42
+     Max          23      23      9                  207      207      44
+     Sum         137     137     49                 1237     1237     257
+
+
+
+     bravais-lattice index     =            0
+     lattice parameter (alat)  =       6.6518  a.u.
+     unit-cell volume          =     294.3233 (a.u.)^3
+     number of atoms/cell      =            4
+     number of atomic types    =            2
+     number of electrons       =        72.00
+     number of Kohn-Sham states=           43
+     kinetic-energy cutoff     =      10.0000  Ry
+     charge density cutoff     =      40.0000  Ry
+     convergence threshold     =      1.0E-06
+     mixing beta               =       0.7000
+     number of iterations used =            8  plain     mixing
+     Exchange-correlation      = PBE ( 1  4  3  4 0 0)
+
+     celldm(1)=   6.651836  celldm(2)=   0.000000  celldm(3)=   0.000000
+     celldm(4)=   0.000000  celldm(5)=   0.000000  celldm(6)=   0.000000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (   1.000000   0.000000   0.000000 )  
+               a(2) = (   0.000000   1.000000   0.000000 )  
+               a(3) = (   0.000000   0.000000   1.000000 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  1.000000  0.000000  0.000000 )  
+               b(2) = (  0.000000  1.000000  0.000000 )  
+               b(3) = (  0.000000  0.000000  1.000000 )  
+
+
+     PseudoPot. # 1 for Ni read from file:
+     /home/cristian/Escritorio/Proyecto_Grafeno/pseudopotenciales/Ni.pbe-spn-rrkjus_psl.1.0.0.UPF
+     MD5 check sum: 8b3fc9aac6dafe35f580d41bb18c3945
+     Pseudo is Ultrasoft + core correction, Zval = 18.0
+     Generated using "atomic" code by A. Dal Corso v.6.3
+     Using radial grid of 1195 points,  6 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+                l(5) =   2
+                l(6) =   2
+     Q(r) pseudized with 0 coefficients 
+
+
+     PseudoPot. # 2 for Ni read from file:
+     /home/cristian/Escritorio/Proyecto_Grafeno/pseudopotenciales/Ni.pbe-spn-rrkjus_psl.1.0.0.UPF
+     MD5 check sum: 8b3fc9aac6dafe35f580d41bb18c3945
+     Pseudo is Ultrasoft + core correction, Zval = 18.0
+     Generated using "atomic" code by A. Dal Corso v.6.3
+     Using radial grid of 1195 points,  6 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+                l(5) =   2
+                l(6) =   2
+     Q(r) pseudized with 0 coefficients 
+
+
+     atomic species   valence    mass     pseudopotential
+        Ni1           18.00    58.69340     Ni( 1.00)
+        Ni2           18.00    58.69340     Ni( 1.00)
+
+     Starting magnetic structure 
+     atomic species   magnetization
+        Ni1          0.100
+        Ni2         -0.100
+
+     16 Sym. Ops., with inversion, found
+
+
+
+   Cartesian axes
+
+     site n.     atom                  positions (alat units)
+         1           Ni1 tau(   1) = (   0.0000000   0.0000000   0.0000000  )
+         2           Ni2 tau(   2) = (   0.5000000   0.5000000   0.0000000  )
+         3           Ni1 tau(   3) = (   0.0000000   0.5000000   0.5000000  )
+         4           Ni2 tau(   4) = (   0.5000000   0.0000000   0.5000000  )
+
+     number of k points=    40  Methfessel-Paxton smearing, width (Ry)=  0.0300
+                       cart. coord. in units 2pi/alat
+        k(    1) = (   0.0625000   0.0625000   0.0625000), wk =   0.0156250
+        k(    2) = (   0.0625000   0.0625000   0.1875000), wk =   0.0312500
+        k(    3) = (   0.0625000   0.0625000   0.3125000), wk =   0.0312500
+        k(    4) = (   0.0625000   0.0625000   0.4375000), wk =   0.0312500
+        k(    5) = (   0.0625000   0.1875000   0.1875000), wk =   0.0156250
+        k(    6) = (   0.0625000   0.1875000   0.3125000), wk =   0.0312500
+        k(    7) = (   0.0625000   0.1875000   0.4375000), wk =   0.0312500
+        k(    8) = (   0.0625000   0.3125000   0.3125000), wk =   0.0156250
+        k(    9) = (   0.0625000   0.3125000   0.4375000), wk =   0.0312500
+        k(   10) = (   0.0625000   0.4375000   0.4375000), wk =   0.0156250
+        k(   11) = (   0.1875000   0.1875000   0.1875000), wk =   0.0156250
+        k(   12) = (   0.1875000   0.1875000   0.3125000), wk =   0.0312500
+        k(   13) = (   0.1875000   0.1875000   0.4375000), wk =   0.0312500
+        k(   14) = (   0.1875000   0.3125000   0.3125000), wk =   0.0156250
+        k(   15) = (   0.1875000   0.3125000   0.4375000), wk =   0.0312500
+        k(   16) = (   0.1875000   0.4375000   0.4375000), wk =   0.0156250
+        k(   17) = (   0.3125000   0.3125000   0.3125000), wk =   0.0156250
+        k(   18) = (   0.3125000   0.3125000   0.4375000), wk =   0.0312500
+        k(   19) = (   0.3125000   0.4375000   0.4375000), wk =   0.0156250
+        k(   20) = (   0.4375000   0.4375000   0.4375000), wk =   0.0156250
+        k(   21) = (   0.1875000   0.0625000   0.0625000), wk =   0.0156250
+        k(   22) = (   0.3125000   0.0625000   0.0625000), wk =   0.0156250
+        k(   23) = (   0.4375000   0.0625000   0.0625000), wk =   0.0156250
+        k(   24) = (   0.1875000   0.1875000   0.0625000), wk =   0.0312500
+        k(   25) = (   0.1875000   0.3125000   0.0625000), wk =   0.0312500
+        k(   26) = (   0.3125000   0.0625000   0.1875000), wk =   0.0312500
+        k(   27) = (   0.1875000   0.4375000   0.0625000), wk =   0.0312500
+        k(   28) = (   0.4375000   0.0625000   0.1875000), wk =   0.0312500
+        k(   29) = (   0.3125000   0.3125000   0.0625000), wk =   0.0312500
+        k(   30) = (   0.3125000   0.4375000   0.0625000), wk =   0.0312500
+        k(   31) = (   0.4375000   0.0625000   0.3125000), wk =   0.0312500
+        k(   32) = (   0.4375000   0.4375000   0.0625000), wk =   0.0312500
+        k(   33) = (   0.3125000   0.1875000   0.1875000), wk =   0.0156250
+        k(   34) = (   0.4375000   0.1875000   0.1875000), wk =   0.0156250
+        k(   35) = (   0.3125000   0.3125000   0.1875000), wk =   0.0312500
+        k(   36) = (   0.3125000   0.4375000   0.1875000), wk =   0.0312500
+        k(   37) = (   0.4375000   0.1875000   0.3125000), wk =   0.0312500
+        k(   38) = (   0.4375000   0.4375000   0.1875000), wk =   0.0312500
+        k(   39) = (   0.4375000   0.3125000   0.3125000), wk =   0.0156250
+        k(   40) = (   0.4375000   0.4375000   0.3125000), wk =   0.0312500
+
+     Dense  grid:     1237 G-vectors     FFT dimensions: (  15,  15,  15)
+
+     Estimated max dynamical RAM per process >       4.32 MB
+
+     Estimated total dynamical RAM >      25.93 MB
+     Generating pointlists ...
+     new r_m :   0.2917 (alat units)  1.9402 (a.u.) for type    1
+     new r_m :   0.2917 (alat units)  1.9402 (a.u.) for type    2
+
+     Check: negative core charge=   -0.002407
+
+     Initial potential from superposition of free atoms
+
+     starting charge   71.99900, renormalised to   72.00000
+
+     negative rho (up, down):  1.976E-01 9.481E-03
+     Starting wfcs are   40 randomized atomic wfcs +    3 random wfcs
+
+     total cpu time spent up to now is        1.7 secs
+
+     Self-consistent Calculation
+
+     iteration #  1     ecut=    10.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine diag_bands (1):
+     too many bands, or too few plane waves
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...

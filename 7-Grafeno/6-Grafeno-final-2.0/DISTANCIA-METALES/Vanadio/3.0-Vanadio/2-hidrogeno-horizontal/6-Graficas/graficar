@@ -1,0 +1,15 @@
+#!/bin/bash
+
+name="Vanadium"
+set xlabel "Distance (angstrom)" font "Times-Roman,14"
+set ylabel "Energy (meV)" font "Times-Roman,16"
+set title "Vanadium - Horizontal H2 distance" font "Times-Roman,14"
+unset grid
+unset key
+set yrange [-195:300]
+set ytics -195,15,300
+set xrange [1.7:5]
+set xtics 1.7,0.2,5
+
+plot "top-vanadio.dat" smooth cspline lc 1 title "top", "" with point pt 7 lc 1 notitle, "bridge-vanadio.dat" smooth cspline lc 2 title  "bridge", "" with point pt 7 lc 2 notitle,"bridge2-vanadio.dat" smooth cspline lc 3 title "bridge 2", "" with point pt 7 lc 3 notitle,"sixhollow-vanadio.dat" smooth cspline lc 4 title "sixhollow", "" with point pt 7 lc 4 notitle,"baricentro-vanadio.dat" smooth cspline lc 5 title "barycenter", "" with point pt 7 lc 5 notitle
+ 

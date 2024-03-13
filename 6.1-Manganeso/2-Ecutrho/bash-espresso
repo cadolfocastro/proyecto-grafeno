@@ -1,0 +1,12 @@
+#!/bin/bash
+start=3
+end=17
+symbol="mn"
+for i in $(seq $start $end)
+do
+mpirun -np 6 pw.x  -inp $symbol-$i.in > $symbol-$i.out
+done
+var=$(grep ! *out)
+cat >ecutrho.dat << !
+$var
+!

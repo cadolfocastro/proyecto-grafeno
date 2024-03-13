@@ -1,0 +1,53 @@
+
+&CONTROL
+calculation = 'vc-relax' ,
+restart_mode = 'from_scratch' ,
+outdir = '/tmp' ,
+pseudo_dir = '/home/cristian/Escritorio/Proyecto_Grafeno/pseudopotenciales', 
+prefix = 'c-3.57102' ,
+verbosity = 'high'
+tstress = .true.
+tprnfor = .true.
+etot_conv_thr = 1.d-5
+forc_conv_thr = 1.d-4
+/
+&SYSTEM
+  ibrav = 0,
+  nat  = 8,
+  ntyp = 1,
+  ecutwfc = 80,
+  ecutrho=  560,
+  occupations='smearing',
+  smearing='mv',
+  degauss=0.02,
+  /
+&ELECTRONS
+  electron_maxstep = 400,
+  conv_thr = 1.0d-6
+  diagonalization  = 'david'
+/
+&IONS
+    ion_dynamics = 'bfgs',
+/
+&CELL
+    cell_dynamics = 'bfgs',
+    cell_dofree = 'all',
+    press_conv_thr = 0.5
+/
+ATOMIC_SPECIES
+C   12.011   C.pbe-n-rrkjus_psl.1.0.0.UPF 
+ATOMIC_POSITIONS (angstrom)
+C   0.0000  0.0000  0.0000	
+C   1.7855  1.7855  0.0000
+C   0.0000  1.7855  1.7855
+C   1.7855  0.0000  1.7855 
+C   .8927  .8927  .8927
+C   2.67826  2.67826  .8927
+C   .8927  2.67826  2.67826
+C   2.67826  .8927  2.67826
+CELL_PARAMETERS {angstrom}
+   3.57102  0.00  0.00	
+   0.00  3.57102  0.00	
+   0.00  0.00  3.57102
+K_POINTS automatic
+8  8  8  0  0  0 

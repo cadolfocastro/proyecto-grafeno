@@ -1,0 +1,11 @@
+#!/bin/bash
+
+for parameter in 8.61 8.66
+do
+mpirun -np 6 pw.x  -inp mn-$parameter.in > mn-$parameter.out
+done
+
+var=$(grep ! *out)
+cat >latticeparameter.dat << !
+$var
+!

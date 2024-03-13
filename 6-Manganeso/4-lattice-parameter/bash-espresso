@@ -1,0 +1,15 @@
+#!/bin/bash
+parameterexp=8.91
+step=0.02
+start=$(echo "scale=4; $parameterexp-$step*10"| bc)
+end=$(echo "scale=4; $parameterexp+$step*10"| bc)
+
+for parameter in $(LANG=en_US seq $start $step $end)
+do
+mpirun -np 6 pw.x  -inp mn-$parameter.in > mn-$parameter.out
+done
+
+var=$(grep ! *out)
+cat >latticeparameter.dat << !
+$var
+!

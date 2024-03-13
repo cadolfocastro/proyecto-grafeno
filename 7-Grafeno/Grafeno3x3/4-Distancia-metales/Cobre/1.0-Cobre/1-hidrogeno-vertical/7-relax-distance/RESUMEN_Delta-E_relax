@@ -1,0 +1,90 @@
+--------------------Cálculo de los incrementos de energía relax VERTICAL---------------------
+	
+	Delta E_relax= Ef-Ei
+
+Se toma la distancia que corresponda al mínimo del potencial de morse con ayuda del smooth cspline
+del gnuplot para cada sitio (top, bridge, sixhollow, bridge2, baricentro). Donde Ri es esa distancia, Ei su energía. Después se hace una relajación de Ri y se encuentra Rf que es esa distancia relajada y Ef su energía correspondiente RESTANDO la energìa a 5.0 angstrom
+
+
+	----------------------------
+		Top
+	----------------------------
+	
+	Ri=   2.76156 A
+	Ei= -50.5260 meV
+
+	Rf=   2.764230506 A
+	Ef= -50.805382457157783 meV
+
+	Delta E_relax= -0.2794 meV
+	
+	----------------------------
+	
+	
+	
+	
+	----------------------------
+		Bridge
+	----------------------------
+	
+	Ri=   2.75422 A
+	Ei= -50.9047 meV
+
+	Rf=   2.75675726 A
+	Ef= -51.180689209677411 meV
+
+	Delta E_relax= -0.2760 meV
+	
+	----------------------------
+	
+	
+	
+	
+	----------------------------
+		Sixhollow
+	----------------------------
+	
+	Ri=   2.68032 A
+	Ei= -54.3106 meV
+	
+	Rf=   2.682295564 A
+	Ef= -54.612035876507719 meV
+
+	Delta E_relax= -0.3014 meV
+	
+	----------------------------
+	
+	
+		
+		
+	----------------------------
+		Bridge 2
+	----------------------------
+	
+	Ri=   2.72992 A
+	Ei= -52.0350 meV
+	
+	Rf=   2.731841543 A
+	Ef= -52.321420589863493 meV
+
+	Delta E_relax= -0.2864 meV
+	
+	----------------------------
+	
+	
+	
+			
+	----------------------------
+		Baricentro
+	----------------------------
+	
+	Ri=   2.73830 A
+	Ei= -51.6508 meV
+	
+	Rf=   2.740817004 A
+	Ef= -51.931754422258521 meV
+	
+	Delta E_relax= -0.2810 meV
+	
+	----------------------------
+

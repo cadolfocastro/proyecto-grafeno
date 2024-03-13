@@ -1,0 +1,11 @@
+#!/bin/bash
+
+parameter=3.64915
+symbol="cu"
+
+mpirun -np 6 pw.x  -inp $symbol-$parameter.in > $symbol-$parameter.out
+
+var=$(grep Final *out)
+cat >finalparameter<< !
+$var
+!

@@ -1,0 +1,12 @@
+#!/bin/bash
+start=5
+end=15
+symbol="mn"
+for kpoints in $(seq $start $end)
+do
+mpirun -np 6 pw.x  -inp $symbol-$kpoints.in > $symbol-$kpoints.out
+done
+var=$(grep ! *out)
+cat >kpoints.dat << !
+$var
+!

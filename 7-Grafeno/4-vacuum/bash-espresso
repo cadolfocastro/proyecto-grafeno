@@ -1,0 +1,12 @@
+#!/bin/bash
+start=5
+end=20
+symbol="gr"
+for vacuum in $(seq $start  $end)
+do
+mpirun -np 6 pw.x  -inp $symbol-$vacuum.in > $symbol-$vacuum.out
+done
+var=$(grep ! *out)
+cat >vacuum.dat << !
+$var
+!
